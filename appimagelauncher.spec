@@ -45,6 +45,8 @@ if ! [ -d .git ]; then
 	# Make stupid version checker happy
 	git init
 	git add .
+	git config user.email info@openmandriva.org
+	git config user.name "OpenMandriva Builder"
 	git commit -m "Import to make version checker happy"
 fi
 
