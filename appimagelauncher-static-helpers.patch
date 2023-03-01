@@ -1,0 +1,9 @@
+diff -up AppImageLauncher-3.0.0-alpha-1/src/i18n/CMakeLists.txt.omv~ AppImageLauncher-3.0.0-alpha-1/src/i18n/CMakeLists.txt
+--- AppImageLauncher-3.0.0-alpha-1/src/i18n/CMakeLists.txt.omv~	2023-03-01 21:37:49.794930363 +0100
++++ AppImageLauncher-3.0.0-alpha-1/src/i18n/CMakeLists.txt	2023-03-01 21:38:00.598007060 +0100
+@@ -1,4 +1,4 @@
+-add_library(translationmanager translationmanager.cpp translationmanager.h)
++add_library(translationmanager STATIC translationmanager.cpp translationmanager.h)
+ target_link_libraries(translationmanager PUBLIC Qt5::Core Qt5::Widgets shared)
+ target_include_directories(translationmanager PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+ add_dependencies(translationmanager l10n)
