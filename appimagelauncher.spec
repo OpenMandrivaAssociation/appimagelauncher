@@ -1,8 +1,41 @@
+%define oname AppImageLauncher
 Name:           appimagelauncher
-Version:        2.2.0
-Release:        0
+Version:        3.0.0
+Release:        0.alpha-1
 License:        MIT
-Summary:        Dummy package
+Summary:        AppImage system intergation
 URL:            https://github.com/TheAssassin/AppImageLauncher
-# Source:         https://github.com/TheAssassin/AppImageLauncher/releases/download/v%{version}/appimagelauncher-0f91801.source.tar.xz
+Source:         https://github.com/TheAssassin/AppImageLauncher/archive/refs/tags/v3.0.0-alpha-1/%{oname}-v3.0.0-alpha-1.tar.gz
 BuildRequires:  automake
+BuildRequires:  cmake
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(cairo)
+BuildRequires:  pkgconfig(librsvg-2.0)
+BuildRequires:  pkgconfig(fuse3)
+BuildRequires:  pkgconfig(libarchive)
+BuildRequires:  pkgconfig(xpm)
+BuildRequires:  pkgconfig(libcurl)
+BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:  pkgconfig(Qt5DBus)
+BuildRequires:  boost-devel
+
+%description
+Integrate AppImages to your application launcher with one click, and manage, update and remove them from there. 
+Double-click AppImages to open them, without having to make them executable first.
+
+AppImageLauncher plays well with other applications managing AppImages, for example app stores. 
+However, it doesn't depend on any of those, and can run completely standalone.
+
+%prep
+%autosetup -n %{oname}-v3.0.0-alpha-1
+
+%build
+%cmake
+
+%make_build
+
+%install
+%make_install -C build
+
+%files
