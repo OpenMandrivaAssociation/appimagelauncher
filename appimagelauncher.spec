@@ -27,6 +27,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:	pkgconfig(gpgme) >= 1.10.0
+BuildRequires:	pkgconfig(openssl)
 BuildRequires:	cmake(nlohmann_json)
 BuildRequires:  boost-devel
 BuildRequires:	git-core
