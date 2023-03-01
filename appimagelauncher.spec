@@ -26,6 +26,7 @@ BuildRequires:  pkgconfig(libcurl)
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5DBus)
+BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:	pkgconfig(gpgme) >= 1.10.0
 BuildRequires:	pkgconfig(openssl)
 BuildRequires:	qmake5
