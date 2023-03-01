@@ -5,7 +5,7 @@ Release:        0.alpha.1
 License:        MIT
 Summary:        AppImage system intergation
 URL:            https://github.com/TheAssassin/AppImageLauncher
-Source:         https://github.com/TheAssassin/AppImageLauncher/archive/refs/tags/v3.0.0-alpha-1/%{oname}-v3.0.0-alpha-1.tar.gz
+Source:         https://github.com/TheAssassin/AppImageLauncher/archive/refs/tags/v3.0.0-alpha-1/%{oname}-3.0.0-alpha-1.tar.gz
 BuildRequires:  automake
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(glib-2.0)
@@ -28,7 +28,7 @@ AppImageLauncher plays well with other applications managing AppImages, for exam
 However, it doesn't depend on any of those, and can run completely standalone.
 
 %prep
-%autosetup -n %{oname}-v3.0.0-alpha-1
+%autosetup -n %{oname}-3.0.0-alpha-1
 
 %build
 %cmake
