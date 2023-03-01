@@ -8,6 +8,8 @@ URL:            https://github.com/TheAssassin/AppImageLauncher
 Source:         https://github.com/TheAssassin/AppImageLauncher/archive/refs/tags/v3.0.0-alpha-1/%{oname}-3.0.0-alpha-1.tar.gz
 BuildRequires:  automake
 BuildRequires:  cmake
+BuildRequires:  git
+BuildRequires:  pkgconfig(libappimage)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(librsvg-2.0)
