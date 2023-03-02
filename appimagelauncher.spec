@@ -92,6 +92,8 @@ export CXXFLAGS="%{optflags} -I$(pwd)/lib/AppImageUpdate/lib/zsync2/include -Wno
 
 %install
 %ninja_install -C build
+install -c -m 755 build/lib/AppImageUpdate/src/updater/libappimageupdate.so %{buildroot}%{_libdir}/
+install -c -m 755 build/lib/AppImageUpdate/src/qt-ui/libappimageupdate-qt.so %{buildroot}%{_libdir}/
 
 %files
 %{_bindir}/AppImageLauncher
@@ -101,6 +103,8 @@ export CXXFLAGS="%{optflags} -I$(pwd)/lib/AppImageUpdate/lib/zsync2/include -Wno
 %{_prefix}/lib/binfmt.d/appimagelauncher.conf
 %{_userunitdir}/appimagelauncherd.service
 %{_libdir}/appimagelauncher
+%{_libdir}/libappimageupdate.so
+%{_libdir}/libappimageupdate-qt.so
 %{_datadir}/appimagelauncher
 %{_datadir}/applications/appimagelauncher.desktop
 %{_datadir}/applications/appimagelaunchersettings.desktop
