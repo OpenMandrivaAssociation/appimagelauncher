@@ -85,6 +85,9 @@ mv args-* lib/AppImageUpdate/lib/zsync2/lib/args
 export CXXFLAGS="%{optflags} -I$(pwd)/lib/AppImageUpdate/lib/zsync2/include -Wno-error=deprecated-declarations"
 %cmake \
 	-DUSE_SYSTEM_LIBAPPIMAGE:BOOL=TRUE \
+%ifarch %{aarch64}
+	-Dbuild_32bit_preload_library:BOOL=FALSE \
+%endif
 	-G Ninja
 
 %build
