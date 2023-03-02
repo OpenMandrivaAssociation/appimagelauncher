@@ -14,6 +14,7 @@ Source5:	https://github.com/Taywee/args/archive/b50b5c45ba1134e9f9b3fdf6f12d75ff
 Patch0:		appimagelauncher-static-helpers.patch
 BuildRequires:  cmake
 BuildRequires:	ninja
+BuildRequires:	patchelf
 BuildRequires:  pkgconfig(libappimage)
 BuildRequires:	%{_lib}appimage-static-devel
 BuildRequires:  pkgconfig(glib-2.0)
