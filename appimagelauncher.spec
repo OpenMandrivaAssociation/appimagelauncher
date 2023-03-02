@@ -35,6 +35,7 @@ BuildRequires:	cmake(nlohmann_json)
 BuildRequires:  boost-devel
 BuildRequires:	git-core
 BuildRequires:	argagg
+BuildRequires:	qt5-linguist-tools
 # For xxd
 BuildRequires:	vim
 
