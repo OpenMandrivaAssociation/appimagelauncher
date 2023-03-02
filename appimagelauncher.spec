@@ -35,7 +35,8 @@ BuildRequires:	cmake(nlohmann_json)
 BuildRequires:  boost-devel
 BuildRequires:	git-core
 BuildRequires:	argagg
-BuildRequires:	xxd
+# For xxd
+BuildRequires:	vim
 
 %description
 Integrate AppImages to your application launcher with one click, and manage, update and remove them from there. 
