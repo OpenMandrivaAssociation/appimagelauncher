@@ -33,6 +33,7 @@ BuildRequires:	pkgconfig(Qt5Quick)
 BuildRequires:	pkgconfig(Qt5QuickWidgets)
 BuildRequires:	pkgconfig(gpgme) >= 1.10.0
 BuildRequires:	pkgconfig(openssl)
+BuildRequires:	pkgconfig(libgcrypt)
 BuildRequires:	qmake5
 BuildRequires:	cmake(nlohmann_json)
 BuildRequires:	boost-devel
