@@ -1,7 +1,7 @@
 %define oname AppImageLauncher
 Name:		appimagelauncher
 Version:	3.0.0
-Release:	0.alpha.1
+Release:	0.alpha.2
 License:	MIT
 Summary:	AppImage system intergation
 URL:		https://github.com/TheAssassin/AppImageLauncher
